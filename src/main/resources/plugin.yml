@@ -1,0 +1,12 @@
+name: PUSH
+version: 1.0
+api-version: 1.16
+main: miqhtie.push.Main
+
+commands:
+  push:
+    description: Pushses a player
+    permission: push.use
+  pushitem:
+    description: Gives you the push item
+    permission: push.getitem
