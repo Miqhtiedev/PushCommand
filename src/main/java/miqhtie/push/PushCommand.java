@@ -36,7 +36,7 @@ public class PushCommand implements CommandExecutor {
             return true;
         }
 
-        player.setVelocity(player.getLocation().getDirection().setY(player.getLocation().getDirection().getBlockY() + 2).add(new Vector(2,0,0)).multiply(50));
+        player.setVelocity(player.getLocation().getDirection().multiply(-50));
         player.getWorld().strikeLightning(player.getLocation());
         sender.sendMessage(ChatColor.GREEN + "Pushed " + args[0]);
         return false;

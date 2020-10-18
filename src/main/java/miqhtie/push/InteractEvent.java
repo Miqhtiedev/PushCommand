@@ -14,7 +14,7 @@ public class InteractEvent implements Listener {
             PushItem pItem = new PushItem();
             if(!pItem.isItem(event.getPlayer().getInventory().getItemInMainHand())) return;
             Player player = event.getPlayer();
-            player.setVelocity(player.getLocation().getDirection().setY(player.getLocation().getDirection().getBlockY() + 2).add(new Vector(2,0,0)).multiply(50));
+            player.setVelocity(player.getLocation().getDirection().multiply(-50));
             player.getWorld().strikeLightning(player.getLocation());
         }
     }

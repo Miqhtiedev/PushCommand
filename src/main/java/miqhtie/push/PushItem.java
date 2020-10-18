@@ -15,7 +15,8 @@ public class PushItem {
 
         ArrayList<String> lore = new ArrayList<>();
         lore.add("If you wish to die, this is a good method");
-        lore.add("Note: Miqhtie Development does not take responsibility for any injuries that occur while using this.");
+        lore.add("Note: Miqhtie Development does not take responsibility");
+        lore.add("for any injuries that occur while using this.");
         ItemStack item = new ItemStack(Material.BLAZE_ROD);
         ItemMeta meta = item.getItemMeta();
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
